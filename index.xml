@@ -1,0 +1,9 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>TangNan Site</title>
+        <link>https://tangtangnan.github.io/</link>
+        <description>This is my cool site</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 15 Jun 2024 19:03:11 &#43;0800</lastBuildDate>
+            <atom:link href="https://tangtangnan.github.io/index.xml" rel="self" type="application/rss+xml" />
+        </channel>
+</rss>
