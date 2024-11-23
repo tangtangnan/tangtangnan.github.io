@@ -13,5 +13,13 @@
     <guid>/posts/myfirst_artical/</guid>
     <description><![CDATA[这是我的第一篇博客内容 ]]></description>
 </item>
+<item>
+    <title>Myfirst_artical</title>
+    <link>/posts/mysecond_artical/</link>
+    <pubDate>Sat, 23 Nov 2024 23:35:47 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>/posts/mysecond_artical/</guid>
+    <description><![CDATA[这是我的第一篇博客内容 ]]></description>
+</item>
 </channel>
 </rss>
