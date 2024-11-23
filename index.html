@@ -58,13 +58,20 @@
 </header><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/myfirst_artical/">Myfirst_artical</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-11-23">2024-11-23</time></span></div><div class="content">这是我的第一篇博客内容 </div><div class="post-footer">
-        <a href="/posts/myfirst_artical/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/mysecond_artical/">Myfirst_artical</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-11-23">2024-11-23</time></span></div><div class="content">这是我的第一篇博客内容 </div><div class="post-footer">
-        <a href="/posts/mysecond_artical/">Read More</a></div>
+        <a href="/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/">windows搭建个人hugo博客以及github部署</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-11-23">2024-11-23</time></span></div><div class="content">1、安装hugo windows环境建议直接下载exe安装包，下载版本是extend版本（不要搞错了），（Releases · gohugoio/hugo · GitHub）下载网址
+下载包解压之后，配置环境变量，终端执行hugo version验证exe文件是否可用
+建议看下官方文档（Installation | Hugo (gohugo.io)）
+2、本地验证个人网站 创建hugo本地文件夹。下述举例，cmd执行hugo new site Technical_Blog，生成Technical_Blog文件夹
+生成.md文件。cd进入Technical_Blog，执行hugo new posts/windows搭建个人hugo博客以及github部署.md，生成的md文件在/Technical_Blog/content目录可以找到。
+打开md文件，修改draft = false，true代表临时文件，false代表发布文件，
+上述修改后，就正常在md文件中增加博客内容
+hugo默认无主题，需要增加theme，google搜索hugoComplete List | Hugo Themes，可以下载到主题，直接拷贝至目录Technical_Blog/themes，并修改配置文件hugo.homl，URL删除，主题增加theme = &lsquo;LoveIt&rsquo;
+cmd执行hugo server，本地浏览器登录下述地址localhost:1313/，就可以访问搭建的网站
+3、github部署 安装windows版本git软件，例如Git-2.37.2.2-64-bit.exe，方便本地代码管理
+Github建立独立仓库
+本地拉去上述仓库；Technical_Blog文件夹下，cmd执行命令hugo，可更新public文件，更新之后把整个public文件夹上传至git仓库即完成部署</div><div class="post-footer">
+        <a href="/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/">Read More</a></div>
 </article></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.127.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>

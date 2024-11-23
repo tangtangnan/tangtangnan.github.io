@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>windows搭建个人hugo博客以及github部署 - My New Hugo Site</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="windows搭建个人hugo博客以及github部署">
+  <meta property="og:description" content="1、安装hugo windows环境建议直接下载exe安装包，下载版本是extend版本（不要搞错了），（Releases · gohugoio/hugo · GitHub）下载网址
+下载包解压之后，配置环境变量，终端执行hugo version验证exe文件是否可用
+建议看下官方文档（Installation | Hugo (gohugo.io)）
+2、本地验证个人网站 创建hugo本地文件夹。下述举例，cmd执行hugo new site Technical_Blog，生成Technical_Blog文件夹
+生成.md文件。cd进入Technical_Blog，执行hugo new posts/windows搭建个人hugo博客以及github部署.md，生成的md文件在/Technical_Blog/content目录可以找到。
+打开md文件，修改draft = false，true代表临时文件，false代表发布文件，
+上述修改后，就正常在md文件中增加博客内容
+hugo默认无主题，需要增加theme，google搜索hugoComplete List | Hugo Themes，可以下载到主题，直接拷贝至目录Technical_Blog/themes，并修改配置文件hugo.homl，URL删除，主题增加theme = ‘LoveIt’
+cmd执行hugo server，本地浏览器登录下述地址localhost:1313/，就可以访问搭建的网站
+3、github部署 安装windows版本git软件，例如Git-2.37.2.2-64-bit.exe，方便本地代码管理
+Github建立独立仓库
+本地拉去上述仓库；Technical_Blog文件夹下，cmd执行命令hugo，可更新public文件，更新之后把整个public文件夹上传至git仓库即完成部署">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-11-23T23:35:47+08:00">
+    <meta property="article:modified_time" content="2024-11-23T23:35:47+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="windows搭建个人hugo博客以及github部署">
+  <meta name="twitter:description" content="1、安装hugo windows环境建议直接下载exe安装包，下载版本是extend版本（不要搞错了），（Releases · gohugoio/hugo · GitHub）下载网址
+下载包解压之后，配置环境变量，终端执行hugo version验证exe文件是否可用
+建议看下官方文档（Installation | Hugo (gohugo.io)）
+2、本地验证个人网站 创建hugo本地文件夹。下述举例，cmd执行hugo new site Technical_Blog，生成Technical_Blog文件夹
+生成.md文件。cd进入Technical_Blog，执行hugo new posts/windows搭建个人hugo博客以及github部署.md，生成的md文件在/Technical_Blog/content目录可以找到。
+打开md文件，修改draft = false，true代表临时文件，false代表发布文件，
+上述修改后，就正常在md文件中增加博客内容
+hugo默认无主题，需要增加theme，google搜索hugoComplete List | Hugo Themes，可以下载到主题，直接拷贝至目录Technical_Blog/themes，并修改配置文件hugo.homl，URL删除，主题增加theme = ‘LoveIt’
+cmd执行hugo server，本地浏览器登录下述地址localhost:1313/，就可以访问搭建的网站
+3、github部署 安装windows版本git软件，例如Git-2.37.2.2-64-bit.exe，方便本地代码管理
+Github建立独立仓库
+本地拉去上述仓库；Technical_Blog文件夹下，cmd执行命令hugo，可更新public文件，更新之后把整个public文件夹上传至git仓库即完成部署">
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "windows搭建个人hugo博客以及github部署",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2\/"
+        },"genre": "posts","wordcount":  37 ,
+        "url": "\/posts\/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2\/","datePublished": "2024-11-23T23:35:47+08:00","dateModified": "2024-11-23T23:35:47+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My New Hugo Site">My cool site</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My New Hugo Site">My cool site</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">windows搭建个人hugo博客以及github部署</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-11-23">2024-11-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;37 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1安装hugo">1、安装hugo</a></li>
+        <li><a href="#2本地验证个人网站">2、本地验证个人网站</a></li>
+        <li><a href="#3github部署">3、github部署</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="1安装hugo">1、安装hugo</h3>
+<ul>
+<li>
+<p><strong>windows环境建议直</strong>接下载exe安装包，下载版本是extend版本（不要搞错了），（<a href="https://github.com/gohugoio/hugo/releases/" target="_blank" rel="noopener noreffer ">Releases · gohugoio/hugo · GitHub</a>）下载网址</p>
+</li>
+<li>
+<p>下载包解压之后，配置环境变量，终端执行hugo version验证exe文件是否可用</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/version.png"
+        data-srcset="/images/version.png, /images/version.png 1.5x, /images/version.png 2x"
+        data-sizes="auto"
+        alt="/images/version.png"
+        title="/images/version.png" /></p>
+</li>
+<li>
+<p>建议看下官方文档（<a href="https://gohugo.io/categories/installation/" target="_blank" rel="noopener noreffer ">Installation | Hugo (gohugo.io)</a>）</p>
+</li>
+</ul>
+<h3 id="2本地验证个人网站">2、本地验证个人网站</h3>
+<ul>
+<li>
+<p>创建hugo本地文件夹。下述举例，cmd执行hugo new site Technical_Blog，生成Technical_Blog文件夹</p>
+</li>
+<li>
+<p>生成.md文件。cd进入Technical_Blog，执行hugo new posts/windows搭建个人hugo博客以及github部署.md，生成的md文件在/Technical_Blog/content目录可以找到。</p>
+</li>
+<li>
+<p>打开md文件，修改draft = false，true代表临时文件，false代表发布文件，</p>
+</li>
+<li>
+<p>上述修改后，就正常在md文件中增加博客内容</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/md.png"
+        data-srcset="/images/md.png, /images/md.png 1.5x, /images/md.png 2x"
+        data-sizes="auto"
+        alt="/images/md.png"
+        title="/images/md.png" /></p>
+</li>
+<li>
+<p>hugo默认无主题，需要增加theme，google搜索hugo<a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreffer ">Complete List | Hugo Themes</a>，可以下载到主题，直接拷贝至目录Technical_Blog/themes，并修改配置文件hugo.homl，URL删除，主题增加theme = &lsquo;LoveIt&rsquo;</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/htoml.png"
+        data-srcset="/images/htoml.png, /images/htoml.png 1.5x, /images/htoml.png 2x"
+        data-sizes="auto"
+        alt="/images/htoml.png"
+        title="/images/htoml.png" /></p>
+</li>
+<li>
+<p>cmd执行hugo server，本地浏览器登录下述地址localhost:1313/，就可以访问搭建的网站</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/website.png"
+        data-srcset="/images/website.png, /images/website.png 1.5x, /images/website.png 2x"
+        data-sizes="auto"
+        alt="/images/website.png"
+        title="/images/website.png" /><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/login.png"
+        data-srcset="/images/login.png, /images/login.png 1.5x, /images/login.png 2x"
+        data-sizes="auto"
+        alt="/images/login.png"
+        title="/images/login.png" /> </p>
+</li>
+</ul>
+<h3 id="3github部署">3、github部署</h3>
+<ul>
+<li>
+<p>安装windows版本git软件，例如Git-2.37.2.2-64-bit.exe，方便本地代码管理</p>
+</li>
+<li>
+<p>Github建立独立仓库</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/github.png"
+        data-srcset="/images/github.png, /images/github.png 1.5x, /images/github.png 2x"
+        data-sizes="auto"
+        alt="/images/github.png"
+        title="/images/github.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/pages.png"
+        data-srcset="/images/pages.png, /images/pages.png 1.5x, /images/pages.png 2x"
+        data-sizes="auto"
+        alt="/images/pages.png"
+        title="/images/pages.png" /></p>
+</li>
+<li>
+<p>本地拉去上述仓库；Technical_Blog文件夹下，cmd执行命令hugo，可更新public文件，更新之后把整个public文件夹上传至git仓库即完成部署</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/hugo_cmd.png"
+        data-srcset="/images/hugo_cmd.png, /images/hugo_cmd.png 1.5x, /images/hugo_cmd.png 2x"
+        data-sizes="auto"
+        alt="/images/hugo_cmd.png"
+        title="/images/hugo_cmd.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/hugo_cmd.png"
+        data-srcset="/images/hugo_cmd.png, /images/hugo_cmd.png 1.5x, /images/hugo_cmd.png 2x"
+        data-sizes="auto"
+        alt="/images/hugo_cmd.png"
+        title="/images/hugo_cmd.png" /></p>
+</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-11-23</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/" data-title="windows搭建个人hugo博客以及github部署"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/" data-title="windows搭建个人hugo博客以及github部署"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/" data-title="windows搭建个人hugo博客以及github部署"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/" data-title="windows搭建个人hugo博客以及github部署"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.127.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
