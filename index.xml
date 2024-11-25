@@ -24,13 +24,5 @@ cmd执行hugo server，本地浏览器登录下述地址localhost:1313/，就可
 Github建立独立仓库
 本地拉去上述仓库；Technical_Blog文件夹下，cmd执行命令hugo，可更新public文件，更新之后把整个public文件夹上传至git仓库即完成部署]]></description>
 </item>
-<item>
-    <title>Myfirst_artical</title>
-    <link>/posts/mysecond_artical/</link>
-    <pubDate>Sat, 23 Nov 2024 23:35:47 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>/posts/mysecond_artical/</guid>
-    <description><![CDATA[这是我的第一篇博客内容 ]]></description>
-</item>
 </channel>
 </rss>
