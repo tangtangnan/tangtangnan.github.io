@@ -1,28 +1,54 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>My New Hugo Site</title>
-        <link>//localhost:1313/</link>
-        <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 23 Nov 2024 23:35:47 &#43;0800</lastBuildDate>
-            <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-    <title>windows搭建个人hugo博客以及github部署</title>
-    <link>//localhost:1313/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/</link>
-    <pubDate>Sat, 23 Nov 2024 23:35:47 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>//localhost:1313/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/</guid>
-    <description><![CDATA[1、安装hugo windows环境建议直接下载exe安装包，下载版本是extend版本（不要搞错了），（Releases · gohugoio/hugo · GitHub）下载网址
-下载包解压之后，配置环境变量，终端执行hugo version验证exe文件是否可用
-建议看下官方文档（Installation | Hugo (gohugo.io)）
-2、本地验证个人网站 创建hugo本地文件夹。下述举例，cmd执行hugo new site Technical_Blog，生成Technical_Blog文件夹
-生成.md文件。cd进入Technical_Blog，执行hugo new posts/windows搭建个人hugo博客以及github部署.md，生成的md文件在/Technical_Blog/content目录可以找到。
-打开md文件，修改draft = false，true代表临时文件，false代表发布文件，
-上述修改后，就正常在md文件中增加博客内容
-hugo默认无主题，需要增加theme，google搜索hugoComplete List | Hugo Themes，可以下载到主题，直接拷贝至目录Technical_Blog/themes，并修改配置文件hugo.homl，URL删除，主题增加theme = &lsquo;LoveIt&rsquo;
-cmd执行hugo server，本地浏览器登录下述地址localhost:1313/，就可以访问搭建的网站
-3、github部署 安装windows版本git软件，例如Git-2.37.2.2-64-bit.exe，方便本地代码管理
-Github建立独立仓库
-本地拉去上述仓库；Technical_Blog文件夹下，cmd执行命令hugo，可更新public文件，更新之后把整个public文件夹上传至git仓库即完成部署]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tangnan Blog</title>
+    <link>/</link>
+    <description>Recent content on Tangnan Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Nov 2024 23:35:47 +0800</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>windows搭建个人hugo博客以及github部署</title>
+      <link>/post/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Sat, 23 Nov 2024 23:35:47 +0800</pubDate>
+      <guid>/post/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/</guid>
+      <description>1、安装hugo windows环境建议直接下载exe安装包，下载版本是extend版本（不要搞错了），（Releases · gohugoio/hugo · GitHub）</description>
+    </item>
+    <item>
+      <title>windows搭建个人hugo博客以及github部署</title>
+      <link>/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Sat, 23 Nov 2024 23:35:47 +0800</pubDate>
+      <guid>/posts/windows%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAhugo%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8Agithub%E9%83%A8%E7%BD%B2/</guid>
+      <description>1、安装hugo windows环境建议直接下载exe安装包，下载版本是extend版本（不要搞错了），（Releases · gohugoio/hugo · GitHub）</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/about/</guid>
+      <description>About Me </description>
+    </item>
+    <item>
+      <title></title>
+      <link>/notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>/search/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/search/placeholder/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Posts Archive</title>
+      <link>/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/archive/</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>
